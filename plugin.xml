@@ -38,13 +38,6 @@
 			 </feature>
 		 </config-file>
 
-		 <!-- The app is able to run in background through audio background mode -->
-		 <config-file target="*-Info.plist" parent="UIBackgroundModes">
-			 <array>
-				 <string>audio</string>
-			 </array>
-		 </config-file>
-
 		 <source-file src="src/ios/BackgroundAudio.m" />
 
 	 </platform>
