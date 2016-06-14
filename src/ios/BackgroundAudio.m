@@ -16,6 +16,9 @@
 	if (!ok) {
 		NSLog(@"%s setCategoryError=%@", __PRETTY_FUNCTION__, setCategoryError);
 	}
+	
+	[[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+    	[self resignFirstResponder];
 }
 
 @end
