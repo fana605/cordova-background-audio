@@ -17,6 +17,16 @@
 		NSLog(@"%s setCategoryError=%@", __PRETTY_FUNCTION__, setCategoryError);
 	}
 	
+	MPNowPlayingInfoCenter *infoCenter = [MPNowPlayingInfoCenter defaultCenter];
+
+	NSDictionary *nowPlayingInfo = @{
+                                 MPMediaItemPropertyTitle : @"Media Name",
+                                 MPMediaItemPropertyArtist : @"Media Artist",
+                                 MPMediaItemPropertyTitle : @""
+                                 };
+
+	[infoCenter setNowPlayingInfo:[NSDictionary dictionaryWithDictionary:nowPlayingInfo]];
+	
 }
 
 @end
